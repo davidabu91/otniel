@@ -44,7 +44,7 @@ export default function MobileDrawer() {
     >
       <Scrollbars autoHide>
         <Box sx={styles.menu}>
-          <Box>
+          <Box sx={styles.content}>
             {menuItems.map((menuItem, i) => (
               <Link
                 activeClass='active'

@@ -7,7 +7,23 @@ import ShapeRight from 'assets/shape-right.png';
 
 export default function Banner() {
   return (
-    <h1>Banner</h1>
+    <section sx={styles.banner} id="home">
+      <Container sx={styles.banner.container}>
+        <Box sx={styles.banner.contentBox}>
+          <Heading as="h1" variant="heroPrimary">
+            עתניאל. הדברים הטובים באמת
+          </Heading>
+          <Text as="p" variant="secondPrimary">
+            בואו להכיר אותנו ולמצוא הכל במקום אחד <br/> אם אתם מחפשים עסקים או שירותים לתושב הגעתם למקום הנכון
+            </Text>
+            <Button variant="primary">חפש כאן </Button>
+        </Box>
+
+        <Box sx={styles.imageBox}>
+          <Image src={BannerImg}></Image>
+        </Box>
+      </Container>
+    </section>
   );
 }
 

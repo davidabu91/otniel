@@ -179,7 +179,27 @@ const data = [
 
 export default function TeamSection() {
   return (
-    <h1>Team Section</h1>
+    <section>
+      <Container>
+        <SectionHeader
+          slogan="הצוות שלנו"
+          title="The most qualitufed and talented individuals"
+        />
+        <Grid sx={styles.grid}>
+          {data.map((item)=> (
+            <TeamCard
+              key={item.id}
+              src={item.imgSrc}
+              text={item.text}
+              title={item.title}
+              designation={item.designation}
+              social={item.socialProfile}
+            />
+          ))}
+          </Grid>
+
+      </Container>
+    </section>
   );
 }
 

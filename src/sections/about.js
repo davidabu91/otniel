@@ -6,36 +6,37 @@ import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
 
-import ServiceThumb from 'assets/service-thumb.png';
+import aboutimg from 'assets/my-assets/aboutimg.jpg';
 import shapePattern from 'assets/shape-pattern1.png';
 
 import Smart from 'assets/services/smart.svg';
 import Secure from 'assets/services/secure.svg';
 
 const data = {
-  subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  subTitle: 'קהילה',
+  title: 'עתניאל. הדברים הטובים באמת.',
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: 'קהילה צומחת',
+      title: 'קהילה צומחת',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'כ-160 משפחות מבוגרים וצעירים חיים יחד במרקם קהילתי מגוון. בעתניאל מגוון שירותי קהילה. מעוניים להצטרף לקהילת עתניאל? צרו קשר עם רכזת הקהילה והקליטה 0527710932',
+      
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      altText: 'תרבות וחינוך',
+      title: 'תרבות וחינוך',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'פעילויות ותרבות עשירה לכל הגילאים, תלמוד תורה, סניף בנ"ע, רכזי נוער ורכזת קהילה, מועדון עבור האולוסיה המבוגרת, ספריה, פעיליות שיא ועוד.',
     },
   ],
 };
 
-export default function ServiceSection() {
+export default function About() {
 
   const [videoOpen, setVideoOpen] = useState(false);
 
@@ -46,12 +47,12 @@ export default function ServiceSection() {
   }
 
   return (
-    <section sx={{ variant: 'section.services' }}>
+    <section id="community" sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} />
+          <Image src={aboutimg} />
           <Button sx={styles.videoBtn} onClick={handleClick} aria-label="play Button">
-            <spn><IoIosPlay /></spn>
+            <span><IoIosPlay /></span>
           </Button>
           <Box sx={styles.shapeBox}>
             <Image src={shapePattern} />
@@ -63,8 +64,8 @@ export default function ServiceSection() {
           <Grid sx={styles.grid}>
             {data.features.map((feature) => (
               <Box sx={styles.card} key={feature.id}>
-                <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon}/>
-                <Box sx={styles.wrapper}>
+                {/* <Image src={feature.imgSrc} alt={feature.altText} sx={styles.icon}/> */}
+                <Box sx={styles.wrapper} dir="rtl">
                   <Heading sx={styles.wrapper.title}>
                     {feature.title}
                   </Heading>
@@ -80,9 +81,12 @@ export default function ServiceSection() {
       <ModalVideo
         channele="youtube"
         isOpen={videoOpen}
-        videoId="aD_bz_UvgNg"
+        videoId="l_jy2OLjwkU"
         onClose={()=>setVideoOpen(false)}
       />
+      <Box sx={styles.contentBox}>
+      <Text sx={styles.wrapper.subTitle}><a href='https://www.youtube.com/channel/UCJNdffcSi0EL5kFJ9QunFCQ'>לעוד סרטונים לחץ כאן</a></Text>
+      </Box>
     </section>
   );
 }
@@ -175,8 +179,9 @@ const styles = {
   contentBox: {
     width: ['100%', null, null, 315, 390, 450, null, 500],
     flexShrink: 0,
+    direction: "rtl",
     mb: [7, null, 60, 0],
-    textAlign: ['center', null, null, 'left'],
+    textAlign: ['center', null, null, 'right'],
   },
   grid: {
     pr: [2, 0, null, null, 6, '70px'],
@@ -186,11 +191,13 @@ const styles = {
     width: ['100%', 370, 420, '100%'],
     gridGap: ['35px 0', null, null, null, '50px 0'],
     gridTemplateColumns: ['repeat(1,1fr)'],
+    
   },
   card: {
     display: 'flex',
     alignItems: 'flex-start',
     transition: 'all 0.3s',
+
   },
 
   icon: {
@@ -203,8 +210,9 @@ const styles = {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    textAlign: 'left',
+    textAlign: "right",
     mt: '-5px',
+    direction: "rtl",
     title: {
       fontSize: 3,
       color: 'heading_secondary',

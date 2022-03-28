@@ -2,7 +2,8 @@
 import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
-import FeatureCardColumn from 'components/feature-card-column.js';
+// import FeatureCardColumn from 'components/feature-card-column.js';
+import ServiceCardColumn from 'components/mycomponents/service-card-column';
 import Performance from 'assets/key-feature/performance.svg';
 import Partnership from 'assets/key-feature/partnership.svg';
 import Subscription from 'assets/key-feature/subscription.svg';
@@ -48,7 +49,7 @@ const data = [
   },
 ];
 
-export default function KeyFeature() {
+export default function Services() {
   return (
     <section sx={{ variant: 'section.keyFeature' }} id="services">
       <Container>
@@ -60,7 +61,7 @@ export default function KeyFeature() {
 
         <Grid sx={styles.grid}>
           {data.map((item)=>(
-            <FeatureCardColumn
+            <ServiceCardColumn
               key={item.id}
               src={item.imgSrc}
               alt={item.altText}

@@ -1,18 +1,26 @@
 export default [
   {
-    path: 'home',
-    label: 'Home',
+    path: 'services',
+    label: 'שירות לתושב',
   },
   {
-    path: 'feature',
-    label: 'Features',
+    path: 'community',
+    label: 'קהילה',
   },
   {
-    path: 'pricing',
-    label: 'Pricing',
+    path: 'business',
+    label: 'עסקים',
   },
   {
-    path: 'testimonial',
-    label: 'Testimonial',
+    path: 'security',
+    label: 'ביטחון',
+  },
+  {
+    path: 'education',
+    label: 'מוסדות חינוך',
+  },
+  {
+    path: 'map',
+    label: 'מפת היישוב',
   },
 ];

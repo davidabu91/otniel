@@ -11,10 +11,11 @@ export default function Logo({ src, ...rest }) {
         display: "flex",
         curser: 'pointer',
         mr: 15,
+        
       }}
       {...rest}
     >
-      <Image src={src} alt="Otniel"/>
+      <Image src={src} alt="Otniel" sx={{width:"195px", height:"140px"}}/>
     </Link>
   );
 }

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Image, Box, Heading, Text } from 'theme-ui';
 
-export default function FeatureCardColumn({
+export default function ServiceCardColumn({
   src,
   altText = 'default alt text',
   title,
@@ -15,7 +15,7 @@ export default function FeatureCardColumn({
       <Box sx={styles.wrapper}>
         <Heading sx={styles.wrapper.title}>{title}</Heading>
         <Text sx={styles.wrapper.subTitle}>{text}</Text>
-        <Text sx={styles.wrapper.subTitle}>{phone}</Text>
+        <Text sx={styles.wrapper.subTitle}><a href={`tel:${phone}`}>{phone}</a></Text>
         <Text sx={styles.wrapper.subTitle}>{peningHours}</Text>
 
       </Box>

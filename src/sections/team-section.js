@@ -9,16 +9,16 @@ import Member1 from 'assets/team/member-1.png';
 import Member2 from 'assets/team/member-2.png';
 import Member3 from 'assets/team/member-3.png';
 import Member4 from 'assets/team/member-4.png';
-import Member5 from 'assets/team/member-5.png';
+import Member5 from 'assets/team/member-5.jpg';
 import Member6 from 'assets/team/member-6.png';
 
 const data = [
   {
     id: 1,
     imgSrc: Member1,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
-    designation: 'CEO and Founder',
+    altText: 'חיה גלמן',
+    title: 'חיה גלמן',
+    designation: 'מנהלת היישוב',
     socialProfile: [
       {
         id: 1,
@@ -43,9 +43,9 @@ const data = [
   {
     id: 2,
     imgSrc: Member2,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Founder',
+    altText: `מירב מרצ'נה`,
+    title: `מירב מרצ'נה`,
+    designation: 'מנהלת קהילה וקליטה',
     socialProfile: [
       {
         id: 1,
@@ -70,9 +70,9 @@ const data = [
   {
     id: 3,
     imgSrc: Member3,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Web Designer',
+    altText: 'נצח ספיר',
+    title: 'נצח ספיר',
+    designation: 'רכז חינוך',
     socialProfile: [
       {
         id: 1,
@@ -97,9 +97,9 @@ const data = [
   {
     id: 4,
     imgSrc: Member4,
-    altText: 'Lina Jutila',
-    title: 'Lina Jutila',
-    designation: 'Web Developer',
+    altText: 'טוביה אביחיל',
+    title: 'טוביה אביחיל',
+    designation: 'מנהל אחזקה',
     socialProfile: [
       {
         id: 1,
@@ -124,9 +124,9 @@ const data = [
   {
     id: 5,
     imgSrc: Member5,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
-    designation: 'CEO and Founder',
+    altText: 'דוד אבו',
+    title: 'דוד אבו',
+    designation: 'רכז ביטחון',
     socialProfile: [
       {
         id: 1,
@@ -151,9 +151,9 @@ const data = [
   {
     id: 6,
     imgSrc: Member6,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Web Designer',
+    altText: 'תפארת אלדד',
+    title: 'תפארת אלדד',
+    designation: 'קומונרית סניף בני-עקיבא',
     socialProfile: [
       {
         id: 1,
@@ -179,11 +179,12 @@ const data = [
 
 export default function TeamSection() {
   return (
-    <section>
+    <section id="teamsection" style={{    marginTop: "40px",
+  }}>
       <Container>
         <SectionHeader
-          slogan="הצוות שלנו"
-          title="The most qualitufed and talented individuals"
+          // slogan="הצוות שלנו"
+          title="צוות עובדי ומזכירות עתניאל"
         />
         <Grid sx={styles.grid}>
           {data.map((item)=> (

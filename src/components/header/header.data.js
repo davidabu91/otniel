@@ -12,15 +12,19 @@ export default [
     label: 'עסקים',
   },
   {
-    path: 'security',
-    label: 'ביטחון',
-  },
-  {
     path: 'education',
     label: 'מוסדות חינוך',
   },
   {
+    path: 'security',
+    label: 'ביטחון',
+  },
+  {
     path: 'map',
     label: 'מפת היישוב',
+  },
+  {
+    path: 'teamsection',
+    label: 'צוות היישוב',
   },
 ];

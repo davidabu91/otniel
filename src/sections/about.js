@@ -85,7 +85,7 @@ export default function About() {
         onClose={()=>setVideoOpen(false)}
       />
       <Box sx={styles.contentBox}>
-      <Text sx={styles.wrapper.subTitle}><a href='https://www.youtube.com/channel/UCJNdffcSi0EL5kFJ9QunFCQ'>לעוד סרטונים לחץ כאן</a></Text>
+      <Text sx={styles.wrapper.subTitle}><a href='https://www.youtube.com/channel/UCJNdffcSi0EL5kFJ9QunFCQ' target="_blank">לעוד סרטונים לחץ כאן</a></Text>
       </Box>
     </section>
   );

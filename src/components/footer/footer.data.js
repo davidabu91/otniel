@@ -1,24 +1,32 @@
 export default {
-  menuItems: [
+  menuItems:[
     {
-      path: '/',
-      label: 'Home',
+      path: 'services',
+      label: ' שירות לתושב',
     },
     {
-      path: '/',
-      label: 'Adversite',
+      path: 'community',
+      label: ' קהילה',
     },
     {
-      path: '/',
-      label: 'Supports',
+      path: 'business',
+      label: ' עסקים',
     },
     {
-      path: '/',
-      label: 'Marketing',
+      path: 'education',
+      label: ' מוסדות חינוך',
     },
     {
-      path: '/',
-      label: 'Contact',
+      path: 'security',
+      label: ' ביטחון',
+    },
+    {
+      path: 'map',
+      label: ' מפת היישוב',
+    },
+    {
+      path: 'teamsection',
+      label: ' צוות היישוב',
     },
   ],
 };

@@ -13,9 +13,9 @@ export default function Banner() {
           <Heading as="h1" variant="heroPrimary">
             עתניאל <br/> הדברים הטובים באמת
           </Heading>
-          <Text as="p" variant="secondPrimary">
+          {/* <Text as="p" variant="secondPrimary">
             בואו להכיר אותנו ולמצוא הכל במקום אחד <br /> אם אתם מחפשים עסקים או שירותים לתושב הגעתם למקום הנכון
-          </Text>
+          </Text> */}
           {/* <Button variant="primary">חפש כאן </Button> */}
         </Box>
 
@@ -79,8 +79,9 @@ const styles = {
     contentBox: {
       width: ['100%', '90%', '535px', null, '57%', '60%', '68%', '60%'],
       mx: 'auto',
+      marginTop: "30px",
       textAlign: 'center',
-      mb: ['40px', null, null, null, null, 7],
+      mb: ['20px', null, null, null, null, 7],
     },
     imageBox: {
       justifyContent: 'center',

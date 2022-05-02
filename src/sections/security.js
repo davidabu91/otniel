@@ -2,40 +2,46 @@
 import { jsx, Container, Box, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
-import FeatureThumb from 'assets/core-feature.png';
+import SecurityCars from 'assets/securityCars.jpeg';
 import shapePattern from 'assets/shape-pattern2.png';
+import ServiceCardColumn from 'components/mycomponents/service-card-column';
 
 const data = {
-  subTitle: 'ביטחון היישוב',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
-  description:
-    `ביישוב צוות אבטחה מיומן עם מערכות הגנה מתקדמות.
-    צוות כוננות ותיק ושתיתוף פעולה עם כל גורמי הביטחון.`,
-  btnName: 'Get Started',
-  btnURL: '#',
+  title: 'ביטחון עתניאל',
+  subTitle: 'Smart Jackpots that you may love this anytime & anywhere',
+  text:
+    `ביישוב רבש"ץ, צוותי חירום וצוות אבטחה מיומן עם מערכות הגנה מתקדמות, מוקד היישוב מאוייש 24/7`,
+  phone: "02-5805030"
 };
 
 export default function Security() {
   return (
-   <section sx={{variant: 'section.coreFeature'}} id="security">
-    <Container sx={styles.containerBox}>
-      <Box sx={styles.contentBox}>
-        <TextFeature 
-          subTitle={data.subTitle}
-          title={data.title}
-          description={data.description}
-          btnName={data.btnName}
-          btnURL={data.btnURL}
-        />
-      </Box>
-      <Box sx={styles.thumbnail}>
-        <Image src={FeatureThumb} alt="Thumbnail" />
-        <Box sx={styles.shapeBox}>
-          <Image src={shapePattern} alt="Shape"/>
+    <section sx={{ variant: 'section.coreFeature' }} id="security">
+      <Container sx={styles.containerBox}>
+        <Box sx={styles.contentBox}>
+          <ServiceCardColumn
+            title={data.title}
+            text={data.text}
+            phone={data.phone}
+            peningHours={data.peningHours}
+
+          />
+
+          {/* <TextFeature
+            title={data.title}
+            // subTitle={data.subTitle}
+
+            description={data.description}
+          /> */}
         </Box>
-      </Box>
-    </Container>
-   </section>
+        <Box sx={styles.thumbnail}>
+          <Image src={SecurityCars} alt="SecurityCars" />
+          {/* <Box sx={styles.shapeBox}>
+          <Image src={shapePattern} alt="Shape"/>
+        </Box> */}
+        </Box>
+      </Container>
+    </section>
   );
 }
 
@@ -66,7 +72,7 @@ const styles = {
   thumbnail: {
     display: 'inline-flex',
     position: 'relative',
-    mr: 'auto',
+    mr: '20px',
     ml: ['auto', null, null, null, 7],
     '> img': {
       position: 'relative',

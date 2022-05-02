@@ -2,10 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup product landing page',
+  description = 'otniel',
   author = 'JSM',
   meta,
-  title = 'startup landing title',
+  title = 'otniel',
 }) {
   const metaData = [
     {

@@ -9,10 +9,16 @@ export default function Footer() {
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link path='/'>
-            <Image src={FooterLogo} alt='Logo'/>
-          </Link>
-          <Box sx={styles.footer.menus}>
+          {/* <Link path='/'> */}
+          <Text>
+            עתניאל אגודה שיתופית חקלאית להתיישבות בע"מ
+          </Text>
+          <Text>
+            ד.ה הר-חברון 9040700
+          </Text>
+          {/* <Image src={FooterLogo} alt='Logo'/>
+          </Link> */}
+          {/* <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItems.map((item, i)=> (
                 <Link 
@@ -23,9 +29,11 @@ export default function Footer() {
                 />
               ))}
             </nav>
-          </Box>
+          </Box> */}
+          <Text sx={styles.footer.copyright}><a href={`tel:029963640`}>02-9963640</a></Text>
+
           <Text sx={styles.footer.copyright}>
-            Copyright by Otniel {new Date().getFullYear()} 
+            Copyright by Otniel {new Date().getFullYear()}
           </Text>
         </Box>
       </Container>

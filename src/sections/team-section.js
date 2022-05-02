@@ -9,7 +9,6 @@ import Member1 from 'assets/team/member-1.png';
 import Member2 from 'assets/team/member-2.png';
 import Member3 from 'assets/team/member-3.png';
 import Member4 from 'assets/team/member-4.png';
-import Member5 from 'assets/team/member-5.jpg';
 import Member6 from 'assets/team/member-6.png';
 
 const data = [
@@ -123,7 +122,7 @@ const data = [
   },
   {
     id: 5,
-    imgSrc: Member5,
+    imgSrc: Member4,
     altText: 'דוד אבו',
     title: 'דוד אבו',
     designation: 'רכז ביטחון',

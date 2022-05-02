@@ -7,7 +7,6 @@ import Layout from 'components/layout';
 import Banner from '../sections/banner';
 import About from '../sections/about';
 import Business from '../sections/business';
-import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
 import Services from 'sections/services';
 import Education from '../sections/education';
@@ -25,7 +24,6 @@ export default function IndexPage() {
           <Education />
           <Security />
 
-          <TeamSection />
 
           <TestimonialCard />
         </Layout>
